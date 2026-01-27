@@ -22,6 +22,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(Moditems.ABDELHAMID.get());
 
                         pOutput.accept(ModBlocks.BAALLA_BLOCK.get());
+                        pOutput.accept(ModBlocks.ABDELHAMID_BLOCK.get());
                     })
                     .build());
 
