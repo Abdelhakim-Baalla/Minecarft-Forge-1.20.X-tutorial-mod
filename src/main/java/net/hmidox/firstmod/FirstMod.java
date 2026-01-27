@@ -1,6 +1,9 @@
 package net.hmidox.firstmod;
 
 import com.mojang.logging.LogUtils;
+import net.hmidox.firstmod.item.ModCreativeModTabs;
+import net.hmidox.firstmod.item.Moditems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -27,6 +30,10 @@ public class FirstMod
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModTabs.register(modEventBus);
+
+        Moditems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -42,6 +49,11 @@ public class FirstMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
+
+    if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+        event.accept(Moditems.BAALLA);
+        event.accept(Moditems.ABDELHAMID);
+    }
 
     }
 
