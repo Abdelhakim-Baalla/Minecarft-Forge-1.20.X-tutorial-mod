@@ -1,6 +1,6 @@
 {
   "type": "minecraft:block",
-  "pool": [
+  "pools": [
     {
       "bonus_rolls": 0.0,
       "conditions": [
@@ -11,10 +11,10 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "baalla"
+          "name": "firstmod:baalla"
         }
       ],
-      "rools": 1.0
+      "rolls": 1.0
     }
   ],
   "random_sequence": "firstmod:blocks/baalla_block"

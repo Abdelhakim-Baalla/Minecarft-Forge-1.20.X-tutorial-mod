@@ -1,6 +1,6 @@
 {
   "type": "minecraft:block",
-  "pool": [
+  "pools": [
     {
       "bonus_rolls": 0.0,
       "conditions": [
@@ -11,10 +11,10 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "abdelhamid"
+          "name": "firstmod:abdelhamid"
         }
       ],
-      "rools": 1.0
+      "rolls": 1.0
     }
   ],
   "random_sequence": "firstmod:blocks/abdelhamid_block"
