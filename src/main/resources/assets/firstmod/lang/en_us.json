@@ -1,6 +1,8 @@
 {
   "item.firstmod.baalla": "Baalla",
   "item.firstmod.abdelhamid": "Abdelhamid",
+  "item.firstmod.l9zbor": "L9zbor",
+  "item.firstmod.lpno": "Lpno",
 
   "block.firstmod.baalla_block": "Baalla Block",
   "block.firstmod.abdelhamid_block": "Abdelhamid Block",
@@ -10,6 +12,7 @@
 
   "item.firstmod.metal_detector": "Metal Detector",
 
+  "tooltip.firstmod.metal_detector.tooltip": "9lb 3la rz9k akhoya, matjich 3ndi ana",
 
   "creativetab.lhbal_tab": "Lhbal Tab"
 }

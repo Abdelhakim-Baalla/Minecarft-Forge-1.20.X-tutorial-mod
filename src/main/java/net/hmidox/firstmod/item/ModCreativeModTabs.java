@@ -22,6 +22,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(Moditems.BAALLA.get());
                         pOutput.accept(Moditems.ABDELHAMID.get());
                         pOutput.accept(Moditems.METAL_DETECTOR.get());
+                        pOutput.accept(Moditems.L9ZBOR.get());
+                        pOutput.accept(Moditems.LPNO.get());
 
                         pOutput.accept(ModBlocks.BAALLA_BLOCK.get());
                         pOutput.accept(ModBlocks.ABDELHAMID_BLOCK.get());
