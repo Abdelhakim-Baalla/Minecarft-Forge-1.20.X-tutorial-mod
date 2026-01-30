@@ -1,6 +1,7 @@
 package net.hmidox.firstmod.block;
 
 import net.hmidox.firstmod.FirstMod;
+import net.hmidox.firstmod.block.custom.SoundBlock;
 import net.hmidox.firstmod.item.Moditems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -31,11 +32,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> BAALLA_ORE = registerBlock("baalla_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3000,6000)));
 
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block){
         return Moditems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
