@@ -18,13 +18,16 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(Moditems.BAALLA.get()))
                     .title(Component.translatable("creativetab.lhbal_tab"))
                     .displayItems((pParameters, pOutput) -> {
+
                         pOutput.accept(Moditems.BAALLA.get());
                         pOutput.accept(Moditems.ABDELHAMID.get());
+                        pOutput.accept(Moditems.METAL_DETECTOR.get());
 
                         pOutput.accept(ModBlocks.BAALLA_BLOCK.get());
                         pOutput.accept(ModBlocks.ABDELHAMID_BLOCK.get());
                         pOutput.accept(ModBlocks.ABDELHAMID_ORE.get());
                         pOutput.accept(ModBlocks.BAALLA_ORE.get());
+
                     })
                     .build());
 
